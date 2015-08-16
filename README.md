@@ -1,22 +1,17 @@
-****
 JAVA
-****
+====
 
-Instalación de `JAVA`_ en servidores LiNUX.
+Instalación de [JAVA](http://java.com/es/about/whatis_java.jsp) en servidores LiNUX.
 
-**********
 Requisitos
-**********
+==========
 
 Sistemas operativos soportados:
 
-	- CentOS 7 
+- CentOS 7 
 
-*********
 Variables
-*********
-
-::
+=========
 
 	---
 	# defaults file for java
@@ -29,36 +24,27 @@ Variables
 	# JDK OPEN
 	centos_openjdk: java-1.8.0-openjdk # Paquete para CentOS 
 
-************
 Dependencias
-************
+============
 
 N/A
 
-*******************
 Ejemplo de playbook
-*******************
-
-::
+===================
 
     - hosts: servidores
       roles:
          - { role: alkher.java, jdk_java:open }
 
-********
 Licencia
-********
+========
 
 BSD
 
-*****
 Autor
-*****
+=====
 
-	Andoni Alcalde
-	- @alkher
-	- http://zenway.es
-	- alcher [at] zenway [dot] es
-
-
-.. _JAVA: http://java.com/es/about/whatis_java.jsp
+Andoni Alcalde
+- @alkher
+- http://zenway.es
+- alcher [at] zenway [dot] es
