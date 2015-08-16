@@ -1,0 +1,7 @@
+---
+# tasks file for java
+- include: oracle_java.yml
+  when: jdk_java == "oracle"
+
+- include: open_java.yml
+  when: jdk_java == "open"

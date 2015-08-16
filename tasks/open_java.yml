@@ -1,0 +1,4 @@
+---
+- name: instalar openjdk para CentOS
+  yum: name={{ centos_openjdk }} state=latest
+  when: ansible_os_family == "RedHat"
