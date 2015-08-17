@@ -32,9 +32,17 @@ N/A
 Ejemplo de playbook
 ===================
 
+Para instalar la versión de java que viene en los repositorios de la distribución:
+
     - hosts: servidores
       roles:
          - { role: alkher.java, jdk_java:open }
+
+Para instalar la versión de java de oracle:
+
+    - hosts: servidores
+      roles:
+         - { role: alkher.java, jdk_java:oracle }
 
 Licencia
 ========
